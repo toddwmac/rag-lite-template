@@ -33,7 +33,8 @@ export async function POST(req: Request) {
     console.log(`API: Calling streamText with model ${siteConfig.ai.defaultModel}...`);
 
     const result = streamText({
-      model: anthropic(siteConfig.ai.defaultModel),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      model: anthropic(siteConfig.ai.defaultModel) as any,
       messages,
       system: systemPrompt,
     });
