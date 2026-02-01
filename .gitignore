@@ -46,6 +46,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Data - Ignore actual documents to prevent accidental leaks
-# but keep the folder structure
+# but keep the folder structure and specific placeholder/instruction files
 /data/*
 !/data/.gitkeep
+!/data/*.md

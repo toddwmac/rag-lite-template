@@ -27,5 +27,18 @@ We have configured the app to use **Claude 3 Haiku** instead of Sonnet.
 3. Add the API Key.
 4. **Deploy.** Vercel will handle the Linux build environment and optimize your Tailwind 4 styles automatically.
 
+## 6. Handling Data Files (Knowledge Base)
+By default, the `.gitignore` is configured to protect your privacy:
+- **Ignored**: All `.pdf`, `.txt`, and non-markdown files in `/data` are **not** pushed to GitHub. This prevents accidental leaking of private documents.
+- **Tracked**: `.md` files in `/data` are tracked so you can include instructions or public documentation.
+
+**To see your private files on a deployed Vercel instance:**
+You must either:
+1.  Temporarily modify `.gitignore` to allow your specific files (not recommended for private data).
+2.  Use a cloud storage solution or database (advanced refactor).
+3.  Manually upload files if using a persistent server (not applicable to Vercel's serverless model).
+
+*Note: For this "Lite" template, the knowledge base is primarily designed for local use or public-facing documentation committed as Markdown.*
+
 ---
 *Ready for Production: 2026-01-31*
