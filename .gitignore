@@ -45,8 +45,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Data - Ignore actual documents to prevent accidental leaks
-# but keep the folder structure and specific placeholder/instruction files
+# Data - Allow documents for the knowledge base
 /data/*
 !/data/.gitkeep
 !/data/*.md
+!/data/*.txt
+!/data/*.pdf
