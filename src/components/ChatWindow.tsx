@@ -1,10 +1,10 @@
-import { Message } from 'ai';
 import { User, Sparkles, Loader2, SlidersHorizontal } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import Image from 'next/image';
 
 interface ChatWindowProps {
-  messages: Message[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  messages: any[];
   isLoading: boolean;
   error?: Error;
   scrollRef: React.RefObject<HTMLDivElement | null>;
