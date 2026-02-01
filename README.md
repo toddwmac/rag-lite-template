@@ -64,6 +64,16 @@ npm run dev
 - **Type Checking**: Strict TypeScript mode enabled.
 - **Performance**: Optimized images using `next/image` and deferred client-side mounting.
 
+## 📚 Documentation
+
+For more detailed information about the project's background and technical implementation, see the `docs/` folder:
+
+- [Technical Overview](docs/technical-overview.md) - Deep dive into features and architecture.
+- [Deployment Guide](docs/deployment-guide.md) - Best practices for Vercel deployment.
+- [Project Roadmap](docs/project-roadmap.md) - Implementation history and future ideas.
+- [Troubleshooting & Learnings](docs/troubleshooting-learnings.md) - Solutions to common issues encountered during development.
+- [Branding Strategy](docs/branding-strategy.md) - Original design and branding goals.
+
 ## 🚢 Deployment
 
 Ready for one-click deployment to **Vercel**. 
