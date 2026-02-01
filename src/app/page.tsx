@@ -88,7 +88,8 @@ export default function Chat() {
 
         <main className="flex-1 flex flex-col relative min-w-0 bg-white">
           <ChatWindow 
-            messages={messages}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            messages={messages as any}
             isLoading={isLoading}
             error={error}
             scrollRef={scrollRef}
