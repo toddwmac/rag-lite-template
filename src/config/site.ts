@@ -9,7 +9,6 @@ export const siteConfig = {
   ai: {
     defaultModel: "claude-3-haiku-20240307",
     defaultPersona: "Never output raw JSON. Use professional corporate tone. Cite sources where possible.",
-    maxDuration: 30,
   },
   theme: {
     primary: "#2872fa",

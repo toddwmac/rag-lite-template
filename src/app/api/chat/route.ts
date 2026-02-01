@@ -5,8 +5,8 @@ import { siteConfig } from '@/config/site';
 import { constructSystemPrompt } from '@/lib/ai-prompt';
 import { ChatRequestSchema } from '@/lib/validations';
 
-// Allow streaming responses up to the configured duration
-export const maxDuration = siteConfig.ai.maxDuration;
+// Allow streaming responses up to 30 seconds
+export const maxDuration = 30;
 
 export async function POST(req: Request) {
   try {
