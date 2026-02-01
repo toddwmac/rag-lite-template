@@ -24,7 +24,7 @@ export const siteConfig = {
 ```
 
 ### 2. Add Your Knowledge Base
-Drop your `.md`, `.txt`, or `.pdf` files into the `/data` folder. They will be automatically discovered and indexed.
+Drop your `.md`, `.txt`, or `.pdf` files into the `/data` folder. These files are **tracked by Git** as your primary knowledge base and will be automatically discovered and indexed upon deployment.
 
 ### 3. Set Your Environment Variables
 Create a `.env.local` file:
@@ -43,7 +43,9 @@ npm run dev
 ## 🛠 Features
 
 - **Modular Architecture**: Clean separation of concerns with dedicated components, hooks, and services.
+- **Vercel Optimized**: Pre-configured with a 30-second `maxDuration` for stable streaming on serverless infrastructure.
 - **Centralized Config**: One file to rule them all. Update branding and AI settings in seconds.
+- **Production-Ready Grounding**: Verified support for Markdown, Plain Text, and PDF parsing.
 - **Interactive Knowledge Base**: Users can toggle specific documents on/off for every query via a sidebar.
 - **Live Persona Tuning**: A built-in "Command Console" for real-time adjustment of AI behavior with `localStorage` persistence.
 - **Robust Type Safety**: Full TypeScript integration with **Zod** schema validation for all API inputs.
@@ -76,10 +78,11 @@ For more detailed information about the project's background and technical imple
 
 ## 🚢 Deployment
 
-Ready for one-click deployment to **Vercel**. 
-1. Push your code to GitHub.
-2. Connect the repo to Vercel.
-3. Add your `ANTHROPIC_API_KEY` to the Vercel environment variables.
+Optimized for **Vercel** serverless environments. 
+1. **Data Sync**: Ensure your knowledge base files are in `/data`. The system whitelists `.md`, `.txt`, and `.pdf` in `.gitignore` to ensure they sync to your deployment.
+2. **Push**: Commit and push your code to GitHub.
+3. **Connect**: Link your repository in the Vercel Dashboard.
+4. **Environment**: Add your `ANTHROPIC_API_KEY` to the Vercel project environment variables.
 
 ---
 
